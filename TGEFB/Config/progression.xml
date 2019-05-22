@@ -1,0 +1,799 @@
+<TGEFB>
+	<append xpath="/progression/attributes">
+		<attribute name="attTGEFB" name_key="attTGEFBName" desc_key="attTGEFBDesc" icon="ui_game_symbol_survival" min_level="1" max_level="1" base_skill_point_cost="1" cost_multiplier_per_level="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="attTGEFBRankDesc"/>
+			</effect_group>
+		</attribute>
+	</append>
+
+	<append xpath="/progression/skills">
+		<skill name="skillTGEFBStreetSmarts" parent="attTGEFB" name_key="skillTGEFBStreetSmartsName" desc_key="skillTGEFBStreetSmartsDesc" icon="ui_game_symbol_skills"><effect_group/></skill>
+		<skill name="skillTGEFBHittingTheGym" parent="attTGEFB" name_key="skillTGEFBHittingTheGymName" desc_key="skillTGEFBHittingTheGymDesc" icon="ui_game_symbol_muscle"><effect_group/></skill>
+		<skill name="skillTGEFBMeditation" parent="attTGEFB" name_key="skillTGEFBMeditationName" desc_key="skillTGEFBMeditationDesc" icon="ui_game_symbol_intellect"><effect_group/></skill>
+	</append>
+
+	<append xpath="/progression/perks">
+
+		<perk name="perkTGEFBStreetSmartsResourceGatherBonus" parent="skillTGEFBStreetSmarts" name_key="perkTGEFBStreetSmartsResourceGatherBonusName" desc_key="perkTGEFBStreetSmartsResourceGatherBonusDesc" icon="ui_game_symbol_mother_load" min_level="0" max_level="20" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="20">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="16"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="17"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="18"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="19"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="20"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="HarvestCount" operation="perc_add" value="0.05,1" level="1,20" tags="oreWoodHarvest, allHarvest, cropHarvest, wildCropsHarvest, butcherHarvest"/>
+				<effect_description level="1" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="16" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="17" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="18" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="19" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+				<effect_description level="20" desc_key="perkTGEFBStreetSmartsResourceGatherBonusRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBStreetSmartsLootBonus" parent="skillTGEFBStreetSmarts" name_key="perkTGEFBStreetSmartsLootBonusName" desc_key="perkTGEFBStreetSmartsLootBonusDesc" icon="ui_game_symbol_shopping_cart" min_level="0" max_level="20" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="20">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="16"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="17"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="18"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="19"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="20"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="LootGameStage" operation="base_add" value="10,200" level="1,20"/>
+				<effect_description level="1" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="16" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="17" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="18" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="19" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+				<effect_description level="20" desc_key="perkTGEFBStreetSmartsLootBonusRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBStreetSmartsLootSpeed" parent="skillTGEFBStreetSmarts" name_key="perkTGEFBStreetSmartsLootSpeedName" desc_key="perkTGEFBStreetSmartsLootSpeedDesc" icon="ui_game_symbol_hand" min_level="0" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="10">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="ScavengingTime" operation="perc_subtract" value="0.015,0.15" level="1,10"/>
+				<effect_description level="1" desc_key="perkTGEFBStreetSmartsLootSpeedRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBStreetSmartsLootSpeedRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBStreetSmartsLootSpeedRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBStreetSmartsLootSpeedRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBStreetSmartsLootSpeedRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBStreetSmartsLootSpeedRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBStreetSmartsLootSpeedRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBStreetSmartsLootSpeedRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBStreetSmartsLootSpeedRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBStreetSmartsLootSpeedRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBStreetSmartsSneakEffectiveness" parent="skillTGEFBStreetSmarts" name_key="perkTGEFBStreetSmartsSneakEffectivenessName" desc_key="perkTGEFBStreetSmartsSneakEffectivenessDesc" icon="ui_game_symbol_ninja" min_level="0" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="10">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<requirement name="HasBuff" buff="buffCrouching" target="self"/>
+				<passive_effect name="LightMultiplier" operation="perc_subtract" value="0.02,0.2" level="1,10">
+					<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="50"/>
+				</passive_effect>
+				<passive_effect name="NoiseMultiplier" operation="perc_subtract" value="0.015,0.15" level="1,10"/>
+				<effect_description level="1" desc_key="perkTGEFBStreetSmartsSneakEffectivenessRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBStreetSmartsSneakEffectivenessRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBStreetSmartsSneakEffectivenessRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBStreetSmartsSneakEffectivenessRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBStreetSmartsSneakEffectivenessRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBStreetSmartsSneakEffectivenessRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBStreetSmartsSneakEffectivenessRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBStreetSmartsSneakEffectivenessRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBStreetSmartsSneakEffectivenessRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBStreetSmartsSneakEffectivenessRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBStreetSmartsSneakSpeed" parent="skillTGEFBStreetSmarts" name_key="perkTGEFBStreetSmartsSneakSpeedName" desc_key="perkTGEFBStreetSmartsSneakSpeedDesc" icon="ui_game_symbol_run" min_level="0" max_level="20" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="20">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="16"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="17"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="18"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="19"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="20"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="CrouchSpeed" operation="base_add" value="0.0,0.4" level="1,20"/>
+				<effect_description level="1" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="16" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="17" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="18" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="19" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+				<effect_description level="20" desc_key="perkTGEFBStreetSmartsSneakSpeedRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBStreetSmartsGunDamage" parent="skillTGEFBStreetSmarts" name_key="perkTGEFBStreetSmartsGunDamageName" desc_key="perkTGEFBStreetSmartsGunDamageDesc" icon="ui_game_symbol_rifle" min_level="0" max_level="20" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="20">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="16"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="17"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="18"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="19"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="20"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="gun"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="0,0.50" level="1,20"/>
+				<effect_description level="1" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="16" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="17" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="18" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="19" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+				<effect_description level="20" desc_key="perkTGEFBStreetSmartsGunDamageRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBStreetSmartsMagazineIncrease" parent="skillTGEFBStreetSmarts" name_key="perkTGEFBStreetSmartsMagazineIncreaseName" desc_key="perkTGEFBStreetSmartsMagazineIncreaseDesc" icon="ui_game_symbol_scrap" min_level="0" max_level="15" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="15">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="ranged"/>
+				<passive_effect name="MagazineSize" operation="perc_add" value="0,0.60" level="1,15"/>
+				<effect_description level="1" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBStreetSmartsMagazineIncreaseRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBHittingTheGymMeleeAttackSpeed" parent="skillTGEFBHittingTheGym" name_key="perkTGEFBHittingTheGymMeleeAttackSpeedName" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedDesc" icon="ui_game_symbol_boxer" min_level="0" max_level="20" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="20">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="16"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="17"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="18"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="19"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="20"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.025,0.5" level="1,20"/>
+				<effect_description level="1" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="16" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="17" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="18" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="19" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+				<effect_description level="20" desc_key="perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBHittingTheGymMeleeDamage" parent="skillTGEFBHittingTheGym" name_key="perkTGEFBHittingTheGymMeleeDamageName" desc_key="perkTGEFBHittingTheGymMeleeDamageDesc" icon="ui_game_symbol_melee" min_level="0" max_level="20" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="20">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="16"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="17"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="18"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="19"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="20"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0.025,0.5" level="1,20"/>
+				<effect_description level="1" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="16" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="17" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="18" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="19" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+				<effect_description level="20" desc_key="perkTGEFBHittingTheGymMeleeDamageRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBHittingTheGymBowDamage" parent="skillTGEFBHittingTheGym" name_key="perkTGEFBHittingTheGymBowDamageName" desc_key="perkTGEFBHittingTheGymBowDamageDesc" icon="ui_game_symbol_archery" min_level="0" max_level="20" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="20">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="16"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="17"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="18"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="19"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="20"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="perkArchery"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="0,0.50" level="1,20"/>
+				<effect_description level="1" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="16" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="17" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="18" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="19" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+				<effect_description level="20" desc_key="perkTGEFBHittingTheGymBowDamageRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBHittingTheGymRunSpeed" parent="skillTGEFBHittingTheGym" name_key="perkTGEFBHittingTheGymRunSpeedName" desc_key="perkTGEFBHittingTheGymRunSpeedDesc" icon="ui_game_symbol_agility" min_level="0" max_level="40" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="40">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="16"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="17"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="18"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="19"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="20"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="21"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="22"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="23"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="24"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="25"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="26"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="27"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="28"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="29"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="30"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="31"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="32"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="33"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="34"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="35"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="36"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="37"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="38"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="39"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="40"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.01,0.4" level="1,40"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.01,0.4" level="1,40"/>
+				<effect_description level="1" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="16" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="17" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="18" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="19" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="20" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="21" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="22" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="23" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="24" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="25" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="26" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="27" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="28" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="29" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="30" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="31" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="32" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="33" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="34" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="35" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="36" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="37" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="38" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="39" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+				<effect_description level="40" desc_key="perkTGEFBHittingTheGymRunSpeedRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBHittingTheGymJumpHeight" parent="skillTGEFBHittingTheGym" name_key="perkTGEFBHittingTheGymJumpHeightName" desc_key="perkTGEFBHittingTheGymJumpHeightDesc" icon="ui_game_symbol_adventure" min_level="0" max_level="20" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="20">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="16"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="17"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="18"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="19"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="20"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="JumpStrength" operation="perc_add" value="0.05,1" level="1,20"/>
+				<effect_description level="1" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="16" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="17" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="18" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="19" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+				<effect_description level="20" desc_key="perkTGEFBHittingTheGymJumpHeightRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBHittingTheGymInShape" parent="skillTGEFBHittingTheGym" name_key="perkTGEFBHittingTheGymInShapeName" desc_key="perkTGEFBHittingTheGymInShapeDesc" icon="ui_game_symbol_run" min_level="0" max_level="20" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="20">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="16"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="17"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="18"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="19"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="20"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="base_add" value="0.5,10" level="1,20"/>
+				<effect_description level="1" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="16" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="17" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="18" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="19" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+				<effect_description level="20" desc_key="perkTGEFBHittingTheGymInShapeRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBMeditationDismember" parent="skillTGEFBMeditation" name_key="perkTGEFBMeditationDismemberName" desc_key="perkTGEFBMeditationDismemberDesc" icon="ui_game_symbol_deep_cuts" min_level="0" max_level="15" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="15">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="DismemberChance" operation="base_add" value="0.01,0.15" level="1,15"/>
+				<effect_description level="1" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBMeditationDismemberRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBMeditationMeleeRange" parent="skillTGEFBMeditation" name_key="perkTGEFBMeditationMeleeRangeName" desc_key="perkTGEFBMeditationMeleeRangeDesc" icon="ui_game_symbol_hand" min_level="0" max_level="15" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="15">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="melee"/>
+				<passive_effect name="MaxRange" operation="perc_add" value="0.02,0.3" level="1,15"/>
+				<passive_effect name="BlockRange" operation="perc_add" value="0.02,0.3" level="1,15"/>
+				<effect_description level="1" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBMeditationMeleeRangeRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBMeditationTaiChi" parent="skillTGEFBMeditation" name_key="perkTGEFBMeditationTaiChiName" desc_key="perkTGEFBMeditationTaiChiDesc" icon="ui_game_symbol_barter" min_level="0" max_level="15" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="15">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="11"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="12"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="13"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="14"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="15"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="StaminaLossMaxMult" operation="perc_subtract" value="0.02,0.3" level="1,15"/>
+				<passive_effect name="WaterLossPerHealthPointGained" operation="perc_subtract" value="0.02,0.3" level="1,15"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_subtract" value="0.02,0.3" level="1,15"/>
+				<effect_description level="1" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="11" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="12" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="13" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="14" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+				<effect_description level="15" desc_key="perkTGEFBMeditationTaiChiRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBMeditationHeatResist" parent="skillTGEFBMeditation" name_key="perkTGEFBMeditationHeatResistName" desc_key="perkTGEFBMeditationHeatResistDesc" icon="ui_game_symbol_temperature" min_level="0" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="10">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="2,20" level="1,10"/>
+				<effect_description level="1" desc_key="perkTGEFBMeditationHeatResistRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBMeditationHeatResistRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBMeditationHeatResistRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBMeditationHeatResistRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBMeditationHeatResistRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBMeditationHeatResistRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBMeditationHeatResistRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBMeditationHeatResistRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBMeditationHeatResistRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBMeditationHeatResistRankDesc"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTGEFBMeditationColdResist" parent="skillTGEFBMeditation" name_key="perkTGEFBMeditationColdResistName" desc_key="perkTGEFBMeditationColdResistDesc" icon="ui_game_symbol_temperature" min_level="0" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="10">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attTGEFB" operation="GTE" value="1" desc_key="reqTGEFBLevel"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="HypothermalResist" operation="base_add" value="2,20" level="1,10"/>
+				<effect_description level="1" desc_key="perkTGEFBMeditationColdResistRankDesc"/>
+				<effect_description level="2" desc_key="perkTGEFBMeditationColdResistRankDesc"/>
+				<effect_description level="3" desc_key="perkTGEFBMeditationColdResistRankDesc"/>
+				<effect_description level="4" desc_key="perkTGEFBMeditationColdResistRankDesc"/>
+				<effect_description level="5" desc_key="perkTGEFBMeditationColdResistRankDesc"/>
+				<effect_description level="6" desc_key="perkTGEFBMeditationColdResistRankDesc"/>
+				<effect_description level="7" desc_key="perkTGEFBMeditationColdResistRankDesc"/>
+				<effect_description level="8" desc_key="perkTGEFBMeditationColdResistRankDesc"/>
+				<effect_description level="9" desc_key="perkTGEFBMeditationColdResistRankDesc"/>
+				<effect_description level="10" desc_key="perkTGEFBMeditationColdResistRankDesc"/>
+			</effect_group>
+		</perk>
+	</append>
+</TGEFB>

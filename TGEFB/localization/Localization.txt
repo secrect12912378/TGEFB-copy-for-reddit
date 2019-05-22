@@ -1,0 +1,134 @@
+TGEFB_Start,,LOCALIZATION,,START,,,,,
+
+atttgefb,progression,Attribute,New,"TGEFB",,,,,
+attTGEFBName,progression,Attribute,New,"Attribute: To Go Even Further Beyond",,,,,
+attTGEFBDesc,progression,Attribute,New,"Through hard work and dedication, you'll be able to slowly train up yourself to near superhuman levels.",,,,,
+
+attTGEFBRankDesc,progression,Attribute,New,"The potential of your human body has been unlocked.",,,,,
+
+
+skillTGEFBStreetSmarts,progression,Skill,New,"Street Smarts",,,,,
+skillTGEFBStreetSmartsName,progression,Skill,New,"Street Smarts",,,,,
+skillTGEFBStreetSmartsDesc,progression,Skill,New,"Being a pro at shape and hole games as a toddler, you've got a good head on your shoulders. Some things just make sense.",,,,,
+
+skillTGEFBHittingTheGym,progression,Skill,New,"Hitting The Gym",,,,,
+skillTGEFBHittingTheGymName,progression,Skill,New,"Hitting The Gym",,,,,
+skillTGEFBHittingTheGymDesc,progression,Skill,New,"Hit the gym bro. Nice biceps bro. Watch me bench 1 ton bro.",,,,,
+
+skillTGEFBMeditation,progression,Skill,New,"Meditation",,,,,
+skillTGEFBMeditationName,progression,Skill,New,"Meditation",,,,,
+skillTGEFBMeditationDesc,progression,Skill,New,"Before the zombie apocalypse, you saw some monks on tv meditating and claiming it gave them superhuman abilities. Worth a shot I guess.",,,,,
+
+
+perkTGEFBStreetSmartsResourceGatherBonus,progression,Perk,New,"Resource Gather",,,,,
+perkTGEFBStreetSmartsResourceGatherBonusName,progression,Perk,New,"Resource Gather",,,,,
+perkTGEFBStreetSmartsResourceGatherBonusDesc,progression,Perk,New,"Finding the best places to hit things to minimize resource wastage, you're able to gather more resources.",,,,,
+
+perkTGEFBStreetSmartsResourceGatherBonusRankDesc,progression,Perk,New,"Increase All Resources Gathered by 5%.",,,,,
+
+perkTGEFBStreetSmartsLootBonus,progression,Perk,New,"Loot Bonus",,,,,
+perkTGEFBStreetSmartsLootBonusName,progression,Perk,New,"Loot Bonus",,,,,
+perkTGEFBStreetSmartsLootBonusDesc,progression,Perk,New,"You once found $2.41 in change inside your couch. You've definitely got a knack for this.",,,,,
+
+perkTGEFBStreetSmartsLootBonusRankDesc,progression,Perk,New,"Increase Loot Bonus by 10.",,,,,
+
+perkTGEFBStreetSmartsLootSpeed,progression,Perk,New,"Loot Speed",,,,,
+perkTGEFBStreetSmartsLootSpeedName,progression,Perk,New,"Loot Speed",,,,,
+perkTGEFBStreetSmartsLootSpeedDesc,progression,Perk,New,"Years of being the first person to get gum from that one kid in class who mistakenly showed that he had gum has trained you for this.",,,,,
+
+perkTGEFBStreetSmartsLootSpeedRankDesc,progression,Perk,New,"Increase Loot Speed by 1.5%.",,,,,
+
+perkTGEFBStreetSmartsSneakEffectiveness,progression,Perk,New,"Sneak Effectiveness",,,,,
+perkTGEFBStreetSmartsSneakEffectivenessName,progression,Perk,New,"Sneak Effectiveness",,,,,
+perkTGEFBStreetSmartsSneakEffectivenessDesc,progression,Perk,New,"Way of the ninja isn't tattooed on your forehead for nothing.",,,,,
+
+perkTGEFBStreetSmartsSneakEffectivenessRankDesc,progression,Perk,New,"Increase Hiding Effectiveness by 2%. Reduce Noise from Actions by 1.5%.",,,,,
+
+perkTGEFBStreetSmartsSneakSpeed,progression,Perk,New,"Sneak Speed",,,,,
+perkTGEFBStreetSmartsSneakSpeedName,progression,Perk,New,"Sneak Speed",,,,,
+perkTGEFBStreetSmartsSneakSpeedDesc,progression,Perk,New,"Going in sneaky beaky like.",,,,,
+
+perkTGEFBStreetSmartsSneakSpeedRankDesc,progression,Perk,New,"Increase Sneaking Movement Speed by 2%.",,,,,
+
+perkTGEFBStreetSmartsGunDamage,progression,Perk,New,"Gun Damage",,,,,
+perkTGEFBStreetSmartsGunDamageName,progression,Perk,New,"Gun Damage",,,,,
+perkTGEFBStreetSmartsGunDamageDesc,progression,Perk,New,"Hit things in their weak spots. Now that's alot of damage.",,,,,
+
+perkTGEFBStreetSmartsGunDamageRankDesc,progression,Perk,New,"Increase Gun Damage by 2.5%.",,,,,
+
+perkTGEFBStreetSmartsMagazineIncrease,progression,Perk,New,"Magazine Size",,,,,
+perkTGEFBStreetSmartsMagazineIncreaseName,progression,Perk,New,"Magazine Size",,,,,
+perkTGEFBStreetSmartsMagazineIncreaseDesc,progression,Perk,New,"Just shove more ammo into the magazine, what could go wrong?",,,,,
+
+perkTGEFBStreetSmartsMagazineIncreaseRankDesc,progression,Perk,New,"Increase Magazine Size of ranged weapons by 4%.",,,,,
+
+perkTGEFBHittingTheGymMeleeAttackSpeed,progression,Perk,New,"Melee Attack Speed",,,,,
+perkTGEFBHittingTheGymMeleeAttackSpeedName,progression,Perk,New,"Melee Attack Speed",,,,,
+perkTGEFBHittingTheGymMeleeAttackSpeedDesc,progression,Perk,New,"Channel your inner Ip Man.",,,,,
+
+perkTGEFBHittingTheGymMeleeAttackSpeedRankDesc,progression,Perk,New,"Increase Melee Attack Speed by 2.5%.",,,,,
+
+perkTGEFBHittingTheGymMeleeDamage,progression,Perk,New,"Melee Damage",,,,,
+perkTGEFBHittingTheGymMeleeDamageName,progression,Perk,New,"Melee Damage",,,,,
+perkTGEFBHittingTheGymMeleeDamageDesc,progression,Perk,New,"100 push-ups, 100 sit-ups, 100 squats, and a 10km run. Every. Single. Day.",,,,,
+
+perkTGEFBHittingTheGymMeleeDamageRankDesc,progression,Perk,New,"Increase Melee Damage by 2.5%.",,,,,
+
+perkTGEFBHittingTheGymBowDamage,progression,Perk,New,"Bow Damage",,,,,
+perkTGEFBHittingTheGymBowDamageName,progression,Perk,New,"Bow Damage",,,,,
+perkTGEFBHittingTheGymBowDamageDesc,progression,Perk,New,"The harder and stronger you can pull back the bow string, the more damage a bow does, right?",,,,,
+
+perkTGEFBHittingTheGymBowDamageRankDesc,progression,Perk,New,"Increase Bow Damage by 2.5%.",,,,,
+
+perkTGEFBHittingTheGymRunSpeed,progression,Perk,New,"Run Speed",,,,,
+perkTGEFBHittingTheGymRunSpeedName,progression,Perk,New,"Run Speed",,,,,
+perkTGEFBHittingTheGymRunSpeedDesc,progression,Perk,New,"I will walk 500 hundred miles and I would walk 500 more.",,,,,
+
+perkTGEFBHittingTheGymRunSpeedRankDesc,progression,Perk,New,"Increase Movement Speed by 1%.",,,,,
+
+perkTGEFBHittingTheGymJumpHeight,progression,Perk,New,"Jump Height",,,,,
+perkTGEFBHittingTheGymJumpHeightName,progression,Perk,New,"Jump Height Increase",,,,,
+perkTGEFBHittingTheGymJumpHeightDesc,progression,Perk,New,"2003 Hulk would be proud.",,,,,
+
+perkTGEFBHittingTheGymJumpHeightRankDesc,progression,Perk,New,"Increase Jump Height by 0.05 units.",,,,,
+
+perkTGEFBHittingTheGymInShape,progression,Perk,New,"Stamina Regen",,,,,
+perkTGEFBHittingTheGymInShapeName,progression,Perk,New,"Stamina Regen",,,,,
+perkTGEFBHittingTheGymInShapeDesc,progression,Perk,New,"Keep on running and see if those pesky zombies can keep up.",,,,,
+
+perkTGEFBHittingTheGymInShapeRankDesc,progression,Perk,New,"Increase Stamina Regen by 0.5/s.",,,,,
+
+perkTGEFBMeditationDismember,progression,Perk,New,"Dismemberment Chance",,,,,
+perkTGEFBMeditationDismemberName,progression,Perk,New,"Dismemberment Chance",,,,,
+perkTGEFBMeditationDismemberDesc,progression,Perk,New,"Omae Wa Mou Shindeiru.",,,,,
+
+perkTGEFBMeditationDismemberRankDesc,progression,Perk,New,"Increase Chance to Dismember Enemy Body Parts by 1%.",,,,,
+
+perkTGEFBMeditationMeleeRange,progression,Perk,New,"Melee Range",,,,,
+perkTGEFBMeditationMeleeRangeName,progression,Perk,New,"Melee Range",,,,,
+perkTGEFBMeditationMeleeRangeDesc,progression,Perk,New,"Finally the Zombie Apocalypse has given you a chance to show off the Buddhist Pam Style you mastered as a child. That manual you bought with your candy money really paid off.",,,,,
+
+perkTGEFBMeditationMeleeRangeRankDesc,progression,Perk,New,"Increase Melee Attack Range by 2%.",,,,,
+
+perkTGEFBMeditationTaiChi,progression,Perk,New,"Tai Chi",,,,,
+perkTGEFBMeditationTaiChiName,progression,Perk,New,"Tai Chi",,,,,
+perkTGEFBMeditationTaiChiDesc,progression,Perk,New,"You read a book on Tai Chi and you're not sure if you're doing it right, but you feel less hungry and thirsty as you practice.",,,,,
+
+perkTGEFBMeditationTaiChiRankDesc,progression,Perk,New,"Reduce Water and Food Consumption Rate by 2%.",,,,,
+
+perkTGEFBMeditationHeatResist,progression,Perk,New,"Heat Resist",,,,,
+perkTGEFBMeditationHeatResistName,progression,Perk,New,"Heat Resist",,,,,
+perkTGEFBMeditationHeatResistDesc,progression,Perk,New,"No air conditioning in the apocalypse has been a bummer. At least you're getting used to the heat.",,,,,
+
+perkTGEFBMeditationHeatResistRankDesc,progression,Perk,New,"Increase Heat Resist by 2.",,,,,
+
+perkTGEFBMeditationColdResist,progression,Perk,New,"Cold Resist",,,,,
+perkTGEFBMeditationColdResistName,progression,Perk,New,"Cold Resist",,,,,
+perkTGEFBMeditationColdResistDesc,progression,Perk,New,"Homelessness due to zombies taking over your house has caused you to sleep outside for a while. The cold doesn't bother you anyway.",,,,,
+
+perkTGEFBMeditationColdResistRankDesc,progression,Perk,New,"Increase Cold Resist by 2.",,,,,
+
+
+reqTGEFBLevel,progression,Attribute,New,TGEFB Level 1,,,,,
+
+TGEFB_End,,LOCALIZATION,,END,,,,,
